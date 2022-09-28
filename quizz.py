@@ -1,24 +1,17 @@
+print("välkomen till Python frågor")
 
-print("Vällkomen till Python Quiz! \n ")
-alla_frågor = 9
-score = 0
-
-def fråga(info_text, text1, text2, text3, text4, rätt_svar ):
-    global score
+def fråga(info_text, text1, text2, text3, text4, rätt_svar):
     print(info_text)
     print("1", text1)
     print("2", text2)
     print("3", text3)
     print("4", text4)
-    print("Skriv rätt svar: \n ")
+    print("Skriv rätt svar:")
     svar = int(input(">"))
     if(rätt_svar == svar):
-        print("Rätt svar \n ")
-        score += 1
-        
+        print("rätt svar")
     else:
         print("Fel")
-       
 
 fråga("Varför kallas språket så? \n ", "Namnet kommer från en reptil", "Namnet på språket kommer från BBC komediserie Monty Python's Flying Circus", "Efternamnet på skaparen är Python","Svar 2 och 3", 3)
 fråga("På vilken plats kom Python i TIOBE index(språkets popularitet) 2021? \n ", "Tredje plats", "Andra plats", "Första plats","Fjarde plats", 3)
