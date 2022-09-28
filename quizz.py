@@ -1,6 +1,8 @@
-print("välkomen till Python frågor")
+print("välkomen till Python Quiz!\n")
+score = 0
 
 def fråga(info_text, text1, text2, text3, text4, rätt_svar):
+    global score
     print(info_text)
     print("1", text1)
     print("2", text2)
@@ -10,6 +12,7 @@ def fråga(info_text, text1, text2, text3, text4, rätt_svar):
     svar = int(input(">"))
     if(rätt_svar == svar):
         print("rätt svar\n")
+        score += 1
     else:
         print("Fel\n")
 
@@ -21,5 +24,6 @@ fråga("Vilket av dessa program är INTE skrivet i Python? \n ", "Reddit", "Pint
 fråga("När skapades Python? \n ", "1990", "1991", "1993","1994", 2 )
 fråga("Vilken Extraherar tillägg från filnamn i Python? \n ", "Py", "Txt", "Psd", "png", 1)
 fråga("Vad betyder sträng i Python? \n ", "Heltal", "Texten", "flyttal", "True", 2)
+fråga("Vad är Python för typ av språk? \n ", "Lågnivå språk", "Mellanvivå språk", "Högnivå språk", "Inget av de föregående alternativen", 3)
 
 print(" Tack för att du spelade! Ditt resultat är: ", score, "rätta svar!")
