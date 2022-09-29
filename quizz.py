@@ -12,9 +12,11 @@ def fråga(info_text, text1, text2, text3, text4, rätt_svar):
     svar = int(input(">"))
     if(rätt_svar == svar):
         print("rätt svar\n")
+        print("-----------------------")
         score += 1
     else:
         print("Fel\n")
+        print("-----------------------")
 
 fråga("Varför kallas språket så? \n ", "Namnet kommer från en reptil", "Namnet på språket kommer från BBC komediserie Monty Python's Flying Circus", "Efternamnet på skaparen är Python","Svar 2 och 3", 3)
 fråga("På vilken plats kom Python i TIOBE index(språkets popularitet) 2021? \n ", "Tredje plats", "Andra plats", "Första plats","Fjarde plats", 3)
