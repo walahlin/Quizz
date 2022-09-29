@@ -25,5 +25,6 @@ fråga("När skapades Python? \n ", "1990", "1991", "1993","1994", 2 )
 fråga("Vilken Extraherar tillägg från filnamn i Python? \n ", "Py", "Txt", "Psd", "png", 1)
 fråga("Vad betyder sträng i Python? \n ", "Heltal", "Texten", "flyttal", "True", 2)
 fråga("Vad är Python för typ av språk? \n ", "Lågnivå språk", "Mellanvivå språk", "Högnivå språk", "Inget av de föregående alternativen", 3)
+fråga("Vad heter skaparen av Python? \n ", "Guido Van Rossum", "James Gosling", "David Flanagan", "Yukihiro Matsumoto", 1)
 
 print(" Tack för att du spelade! Ditt resultat är: ", score, "rätta svar!")
